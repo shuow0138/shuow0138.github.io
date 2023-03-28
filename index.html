@@ -1,24 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <head>
+    <title>My Website</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* body,
-        html {
-            height: 100%;
-            margin: 0;
-        }*/
-        html {
-            background: url(background.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
         .selfie {
             width: 100px;
             border-radius: 50px;
@@ -26,47 +14,124 @@
             margin-right: 10px;
             object-fit: cover;
         }
-
-        .selfintro {
-            font-size: larger;
-            font-style: normal;
-
-        }
-
-        /*  .bg {
-            background-image: url("background.jpg");
-
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }*/
     </style>
-
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="bg"></div>
-    <h1>Shuo Wang</h1>
-    <h2>about me</h2>
-    <img class="selfie" src="IMG_2162.JPG" alt="a selfie of Shuo Wang">
-    <p class="selfintro"> <strong>A Bachelor's student at the University of Maryland, College Park</strong>. <br>
-        Zealous about data
-        science
-        position and with 4+
-        years of programming and data science.<br> Primarily, looking for Software Developer / Data Engineer / Data
-        scientist / Machine Learning engineer roles.</p>
-    <h3>contact info</h3>
-    <p>...</p>
-    <a href="Resume_SDE_ShuoWang - Google Docs.pdf" target="_blank">Resume</a>
-    <a href="https://github.com/shuow0138" target="_blank">github</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/shuow0138" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/shuo-wang-5b4241235/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Shuo Wang</h1>
+            <img class="selfie" img src="IMG_2162.JPG" alt="Me">
+        </div>
+    </header>
+    <main>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p><strong>A Bachelor's student at the University of Maryland, College Park</strong>. <br>
+                Zealous about software development and data science
+                position and with 4+
+                years of software programming and data science experience.<br> Primarily, looking for Software Engineer
+                / Data Engineer /
+                Data
+                scientist / Machine Learning engineer roles.</p>
+            <button><a href="Resume_DS_ML_ShuoWang (1).pdf" target="_blank">View DS/ML Resume</a></button>
+            <button><a href="Resume_SDE_ShuoWang (1).pdf" target="_blank">View SDE Resume</a></button>
+        </section>
+        <section class="project-demos">
+            <h2>Project Demos</h2>
+            <div class="separator"></div>
+            <div class="project-card">
+                <h3>Euclidean Minimum Spanning Trees</h3>
+                <p>Class Projects: Implemented a Euclidean minimum spanning tree using many data structures such as
+                    LinkedList, Set, Hashmap and Priority Queue in Java.
+                </p>
+                <p>
+                    Applied algorithms like Euclidean and Prim's
+                    algorithm.
+                </p>
+                <button><a href="https://github.com/shuow0138/Java/tree/master/EMSTree">View Demo</a></button>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Complex data structures implementation using Java.</li>
+                        <li>Applied algorithms like Euclidean and Prim's
+                            algorithm to find shorted path for airplanes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="separator"></div>
 
-    <a href="mailto:shuow0138@gmail.com">email me</a>
-    <h2>Playgroud</h2>
-    <progress id="SomeProgress" max="100" value="70"> 70% </progress>
-    <p class="username">@Shuo Wang</p>
-    <p>Copyright &copy; @shuow0138</p>
+
+            <div class="project-card">
+                <h3>Maryland Crime Analysis</h3>
+                <p>To find the number of crimes and potential trends between crimes and counties in Maryland from 1990
+                    to 2017.</p>
+                <button><a href="https://github.com/shuow0138/Maryland-Crime-Analysis" target="_blank">View
+                        Demo</a></button>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Data collection, wrangling and processing using sodapy, numpy and pandas in Python.</li>
+                        <li>Data Visualization using matplotlib and seaborn.</li>
+                        <li>Data Analysis using sklearn, text explanation and conlusion.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="project-card">
+                <h3>Office Hour Queue</h3>
+                <p>A pratice program to mimic UMD office hour queue App(Quuly)</p>
+                <button><a href="https://github.com/shuow0138/OH-queue" target="_blank">View Demo</a></button>
+            </div>
+            <div class="skills">
+                <h4>Skills</h4>
+                <ul>
+                    <li> Simple JavaScript, HTML, CSS pratices using local storage.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="separator"></div>
+            <div class="project-card">
+                <h3>Softmax Regression and Neural Networks</h3>
+                <p>implementation of Softmax Regression and Neural Networks. Created codes for dimension reduction with
+                    PCA to find the trade-off in training time and test accuracy.</p>
+                <button><a href="link-to-project-demo-2">View Demo</a></button>
+            </div>
+            <div class="skills">
+                <h4>Skills</h4>
+                <ul>
+                    <li>Implemented Softmax Regression to classify the MNIST digit dataset in Python.
+
+                    </li>
+                    <li> Gradients calculation and Neural Networks </li>
+                    <li>Dimension reduction in Python.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="separator"></div>
+            <p>
+                For more projects and programs,<a href="https://github.com/shuow0138" target="_blank">My GitHub</a>
+            </p>
+
+        </section>
+        <section class="Contact"></section>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me at shuow0138@gmail.com. You can also find me on <a
+                    href="https://www.linkedin.com/in/shuo-wang-5b4241235/" target="_blank">My LinkedIn</a>
+            </p>
+            <a href="mailto:shuow0138@gmail.com">email me</a>
+        </div>
+        </section>
+    </main>
 </body>
 
 </html>
